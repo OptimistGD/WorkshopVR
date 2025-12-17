@@ -2,12 +2,18 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject cylinderPrefab;
-    public GameObject buttonSpawner;
-
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private GameObject cylinderPrefab1, cylinderPrefab2, cylinderPrefab3;
+    public GameObject button;
+    
+    [SerializeField] private Transform spawnPoint1;
+    [SerializeField] private Transform spawnPoint2;
+    [SerializeField] private Transform spawnPoint3;
+    
+    
+    public void Spawn()
     {
-        
+        Instantiate(cylinderPrefab1, spawnPoint1.position, Quaternion.identity);
+        Instantiate(cylinderPrefab2, spawnPoint2.position, Quaternion.identity);
+        Instantiate(cylinderPrefab3, spawnPoint3.position, Quaternion.identity);
     }
 }

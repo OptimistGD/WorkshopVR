@@ -8,12 +8,11 @@ public class ClickableButton : MonoBehaviour
     [SerializeField]
     private Spawner spawner;
     
-    public void Update()
+    
+
+    public void Interact()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Is clicked");
-            spawner.Spawn();
-        }
+        Debug.Log("Is clicked");
+        spawner.Spawn();
     }
 }

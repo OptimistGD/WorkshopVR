@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class ClickableButton : MonoBehaviour
+public class ClickableButtonGift : MonoBehaviour
 {
     [SerializeField]
-    private SpawnerToys spawnerToys;
+    private SpawnerGifts spawnerGifts;
     
     public void Interact()
     {
             Debug.Log("Is clicked");
-            spawnerToys.Spawn();
+            spawnerGifts.Appear();
     }
 }

@@ -1,8 +1,10 @@
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class SpawnerToys : MonoBehaviour
 {
-    [SerializeField] private GameObject cylinderPrefab1, cylinderPrefab2, cylinderPrefab3;
+    [SerializeField] 
+    private GameObject cylinderPrefab1, cylinderPrefab2, cylinderPrefab3;
+    
     public GameObject button;
     
     [SerializeField] private Transform spawnPoint1;

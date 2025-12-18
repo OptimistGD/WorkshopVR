@@ -8,9 +8,12 @@ public class SpawnerGifts : MonoBehaviour
     
     [SerializeField] 
     private Transform spawnPoint;
-
+    
     public void Appear()
     {
-        Instantiate(presentPrefab, spawnPoint.position, Quaternion.identity);
+        GameObject instance = Instantiate(presentPrefab, spawnPoint.position, Quaternion.identity);
+        Texture textures = TextureChange.instance.ChooseTexture();
+
+        instance.GetComponentInChildren<MeshRenderer>().material.mainTexture =  textures;
     }
 }

@@ -20,6 +20,7 @@ public class ColliderAccept : MonoBehaviour
             score++;
             UpdateScoreUI();
             Destroy(other.gameObject);
+            StartCoroutine(OpenHatch.instance.hatchClose());
         }
     }
 

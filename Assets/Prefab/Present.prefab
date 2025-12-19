@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 344650891552162428}
   - component: {fileID: 583256729061463675}
-  - component: {fileID: 7137899690948978956}
   - component: {fileID: 2924039966773690108}
   - component: {fileID: -5973379855248459997}
   m_Layer: 0
   m_Name: Present
-  m_TagString: Untagged
+  m_TagString: Gift
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,27 +49,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PresentCheck
   lidPresent: {fileID: 148423815873062584}
---- !u!65 &7137899690948978956
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5000399011146684168}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.23, y: 0.25, z: 0.24}
-  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!54 &2924039966773690108
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -180,7 +158,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_PredictedVisualsTransform: {fileID: 0}
   m_VelocityDamping: 1
   m_VelocityScale: 1
@@ -287,6 +265,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed1cbfdc427b48248b9ac73951ff9bea, type: 3}
+      propertyPath: m_TagString
+      value: Gift
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -382,6 +364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Gift_Bot
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: be748a073921564428427fd4860a7501, type: 3}
+      propertyPath: m_TagString
+      value: Gift
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -404,6 +390,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: be748a073921564428427fd4860a7501, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2575256589598071307}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: be748a073921564428427fd4860a7501, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7296148425196951125}
   m_SourcePrefab: {fileID: 100100000, guid: be748a073921564428427fd4860a7501, type: 3}
 --- !u!4 &4936575109801968588 stripped
 Transform:
@@ -532,3 +521,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec9dcde07190b84e874bde1cb870b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaterialChange
+--- !u!114 &7296148425196951125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5749386179748845942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea93be9cbf593b4191e0cd278f1941d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PresentCheck
+  lidPresent: {fileID: 148423815873062584}

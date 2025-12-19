@@ -9,5 +9,6 @@ public class ClickableButton : MonoBehaviour
     {
         Debug.Log("Is clicked");
         spawnerToys.Spawn();
+        
     }
 }

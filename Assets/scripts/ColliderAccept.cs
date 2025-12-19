@@ -26,6 +26,6 @@ public class ColliderAccept : MonoBehaviour
 
     void UpdateScoreUI()
     {
-        text.text = " : " + score;
+        text.text = ": " + score;
     }
 }

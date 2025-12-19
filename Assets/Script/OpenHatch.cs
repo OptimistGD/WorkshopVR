@@ -18,7 +18,6 @@ public class OpenHatch : MonoBehaviour
     public bool hatchIsOpen = false;
     
     public static OpenHatch instance;
-
     
     
     private void Awake()

@@ -15,10 +15,15 @@ public class ColliderAccept : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Gift"))
+        if (other.CompareTag("Toys"))
         {
             score++;
             UpdateScoreUI();
+            Destroy(other.gameObject);
+        }
+        
+        if (other.CompareTag("Gift"))
+        {
             Destroy(other.gameObject);
             StartCoroutine(OpenHatch.instance.hatchClose());
         }
@@ -26,6 +31,6 @@ public class ColliderAccept : MonoBehaviour
 
     void UpdateScoreUI()
     {
-        text.text = ": " + score;
+        text.text = ":" + score;
     }
 }

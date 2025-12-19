@@ -7,7 +7,7 @@ public class ClickableButton : MonoBehaviour
     
     public void Interact()
     {
-            Debug.Log("Is clicked");
-            spawnerToys.Spawn();
+        Debug.Log("Is clicked");
+        spawnerToys.Spawn();
     }
 }
